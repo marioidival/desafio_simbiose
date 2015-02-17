@@ -24,7 +24,7 @@ ou se quiser mudar o tempo de verificação:
 
 	python simb_runner.py start --interval n # n = intervalo de verificações em segundos
 
-Apartir desse momento, qualquer novo registro ou alteração em tabelas/indices definidas no datamodel ou fora dele, serão sincronizados em ambos os bancos.
+A partir desse momento, qualquer novo registro ou alteração em tabelas/indices definidas no datamodel ou fora dele, serão sincronizados em ambos os bancos.
 
 ## Dependencias
 
