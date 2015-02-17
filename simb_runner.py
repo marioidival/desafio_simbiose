@@ -4,10 +4,11 @@ File to get arguments by command line
 import click
 
 from simb_datamodel.config_datamodel import run_configs
+from simb_daemon import SimbDaemon
 
 
-@click.group
-def simbose():
+@click.group()
+def simbiose():
     """Package sync to cassandra and elasticsearch"""
     pass
 
@@ -22,11 +23,9 @@ def start(interval):
     """
     # Run configuration to Cassandra and Elasticsearch Data model
     run_configs()
-    pass
+    simbdaemon = SimbDaemon(interval)
+    simbdaemon.run()
 
 
-@simbiose.command()
-@click.argument("stop")
-def stop(stop):
-    """Stop daemon verification"""
-    pass
+if __name__ == "__main__":
+    simbiose()
