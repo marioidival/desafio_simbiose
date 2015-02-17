@@ -22,11 +22,11 @@ O arquivo `simb_runner.py` fica responsável por iniciar o script de sincroniza�
 
 ou se quiser mudar o tempo de verificação:
 
-	python simb_runner.py start --interval n
+	python simb_runner.py start --interval n # n = intervalo de verificações em segundos
 
 ## Dependencias
 
-Para criar esse pacote, foi usado alguns outros:
+Os seguintes pacotes foram usados como dependências:
 * [APScheduler](apscheduler.readthedocs.org) - Agendador de tarefas escrita em Python
 * [click](click.pocoo.org/2/) - Interface de linha de comando escrita em Python
 * [cassandra-driver](datastax.github.io/python-driver/getting_started.html) - Modulo Python do Cassandra
@@ -49,8 +49,8 @@ Para criar esse pacote, foi usado alguns outros:
 
 	1 directory, 8 files
 
-* `simb_daemon.py`: contém manipuladores do Cassandra e Elasticsearch e classe que executa a tarefa de sincronização.
-* `simb_runner.py`: contém interface da linha de comando
+* `simb_daemon.py`: Contém manipuladores do Cassandra e Elasticsearch e classe que executa a tarefa de sincronização.
+* `simb_runner.py`: Contém interface da linha de comando
 * `simb_datamodel/config_datamodel.py`: Cria conexão com Cassandra e Elasticsearch, criando tabelas e indices.
 * `simb_datamodel/simb_cassandra.py`: Contém data model do Cassandra e dicionario com os tipos CQL, mapeados com os tipos Python
 * `simb_datamodel/simb_elasticsearch.py`: Contém data model com Elasticsearch
