@@ -12,7 +12,7 @@ Sincronização entre ElasticSearch e Cassandra
 
 Criar um virtualenv (virtualenv ou virtualenvwrapper) e instalar as dependencias desse desafio:
 
-	pip install -e requirements.txt
+	pip install -r requirements.txt
 
 ## Executando
 
